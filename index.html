@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FindMyFile - Instant Content Search for Your Device</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Use the Inter font family */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Add a subtle gradient to the hero section */
+        .hero-gradient {
+            background: linear-gradient(180deg, #f0f4f8 0%, #ffffff 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <!-- You can replace this with your actual 512x512 app icon -->
+            <img src="https://placehold.co/40x40/3498db/ffffff?text=FMF" alt="FindMyFile App Icon" class="h-10 w-10 mr-3 rounded-lg">
+            <h1 class="text-2xl font-bold text-gray-900">FindMyFile</h1>
+        </div>
+        <a href="#download" class="bg-blue-600 text-white font-semibold px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+            Download
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="hero-gradient">
+        <section class="container mx-auto px-6 py-16 md:py-24 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">
+                Stop searching for filenames.
+            </h2>
+            <h3 class="text-4xl md:text-6xl font-bold text-blue-600 leading-tight mb-6">
+                Start searching your content.
+            </h3>
+            <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">
+                Instantly find any document, PDF, or screenshot just by remembering a single word from inside it. Your private, on-device search engine for all your personal files.
+            </p>
+            <div id="download" class="flex justify-center">
+                <!-- Replace '#' with your actual Google Play Store link when it's live -->
+                <a href="#" class="inline-block">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" 
+                         alt="Get it on Google Play" 
+                         class="h-16 md:h-20"
+                         onerror="this.onerror=null; this.src='https://placehold.co/240x72/000000/ffffff?text=Coming+Soon+to+Google+Play';">
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">The Power of Content Search</h3>
+                <p class="text-lg text-gray-600 mt-2">Go beyond filenames and find what you're really looking for.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <!-- Feature 1 -->
+                <div class="p-6 bg-gray-50 rounded-xl">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Search Inside Files</h4>
+                    <p class="text-gray-600">Find text within PDFs, Word documents, and even images. Never forget where that important piece of information is again.</p>
+                </div>
+                <!-- Feature 2 -->
+                <div class="p-6 bg-gray-50 rounded-xl">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">100% Private & Secure</h4>
+                    <p class="text-gray-600">All file indexing and searching happens entirely on your device. Your personal files and their content never leave your phone.</p>
+                </div>
+                <!-- Feature 3 -->
+                <div class="p-6 bg-gray-50 rounded-xl">
+                    <div class="text-blue-600 mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-semibold mb-2">Unified Search</h4>
+                    <p class="text-gray-600">Search across your downloads, WhatsApp documents, and any other folder you choose, all from a single, simple search bar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEW: Why Choose Us Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-12">
+                    <h3 class="text-3xl md:text-4xl font-bold text-gray-900">Why Choose FindMyFile?</h3>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <p class="text-lg text-gray-600 mb-6">
+                        Most file search apps rely on filename keywords or send data to cloud servers. FindMyFile is different — everything runs locally on your phone using a lightweight AI model, making it completely secure and compliant with Google Play’s Data Safety requirements.
+                    </p>
+                    <h4 class="text-2xl font-bold text-gray-900 mb-4">✨ Key Features</h4>
+                    <ul class="space-y-4 text-gray-700">
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">✅</span><div><strong class="font-semibold">Private AI Search:</strong> Runs directly on your device with no external access.</div></li>
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">🔎</span><div><strong class="font-semibold">Content-Based File Matching:</strong> Find files based on what’s inside them, not just names.</div></li>
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">📂</span><div><strong class="font-semibold">Folder Control:</strong> Choose which folders to include or exclude for better results.</div></li>
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">🔒</span><div><strong class="font-semibold">Zero Cloud Dependency:</strong> No internet required. Your files never leave your device.</div></li>
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">📱</span><div><strong class="font-semibold">Optimized for Speed and Privacy:</strong> Lightweight AI model ensures fast results without draining resources.</div></li>
+                        <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">🛡️</span><div><strong class="font-semibold">Google Play Compliant:</strong> Built with privacy, safety, and Android policy compliance in mind.</div></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-900">See It In Action</h3>
+                <p class="text-lg text-gray-600 mt-2">A clean and simple interface designed for speed.</p>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Replace these with your actual screenshot images -->
+                <img src="https://placehold.co/300x600/e2e8f0/4a5568?text=Search+Screen" alt="App Screenshot 1" class="rounded-xl shadow-lg mx-auto">
+                <img src="https://placehold.co/300x600/e2e8f0/4a5568?text=Results+Screen" alt="App Screenshot 2" class="rounded-xl shadow-lg mx-auto">
+                <img src="https://placehold.co/300x600/e2e8f0/4a5568?text=Folders+Screen" alt="App Screenshot 3" class="rounded-xl shadow-lg mx-auto">
+                <img src="https://placehold.co/300x600/e2e8f0/4a5568?text=Paywall+Screen" alt="App Screenshot 4" class="rounded-xl shadow-lg mx-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Watch Our Demo</h3>
+            <div class="max-w-4xl mx-auto aspect-video bg-gray-200 rounded-xl shadow-lg overflow-hidden">
+                <!-- 
+                    IMPORTANT: You need to upload your video to a hosting service (like YouTube, Vimeo, or your own server)
+                    and replace the placeholder 'your_video_url.mp4' with the public URL.
+                -->
+                <video controls class="w-full h-full" poster="https://placehold.co/1280x720/3498db/ffffff?text=FindMyFile+Demo">
+                    <source src="your_video_url.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 flex flex-col md:flex-row justify-between items-center">
+            <p>&copy; 2025 Privoratech. All rights reserved.</p>
+            <div class="mt-4 md:mt-0">
+                <!-- Replace '#' with your actual Privacy Policy and Deletion links -->
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Account Deletion</a>
+                <a href="mailto:privoratech@gmail.com" class="text-gray-400 hover:text-white mx-2">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
